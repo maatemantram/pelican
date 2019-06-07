@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# output for github-pages
+output/
+.vscode/
+
 # Distribution / packaging
 .Python
 build/
