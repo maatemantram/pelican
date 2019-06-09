@@ -14,4 +14,8 @@
 
 7. Template for the article
 
+8. CNAME preserve while pushing
 
+9. choosing custom domain
+
+10. source in master & content in gh-pages

@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'kk'
-SITENAME = 'maatemantram'
-SITEURL = ''
+AUTHOR = 'maatemantram'
+SITENAME = 'మాటేమంత్రం'
+SITEURL = 'https://maatemantram.com'
 
 PATH = 'content'
 
@@ -20,46 +20,30 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+# LINKS = (('Pelican', 'http://getpelican.com/'),
+#          ('Python.org', 'http://python.org/'),
+#          ('Jinja2', 'http://jinja.pocoo.org/'),
+#          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+# SOCIAL = (('You can add links in your config file', '#'),
+#           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME='photowall'
-'''
-elegant
-eevee
-clean-blog
-plumage
-MinimalXY
-hyde
-gum
-nice-blog
-mg
-pelican-blue
-waterspill
-franticworld
-html5-dopetrope
-new-bootstrap2
-simple
-lovers
-simple-bootstrap
-pelican-fh5co-marble
-photowall
-notmyidea
-Flex
-lightweight
-pjport
-pelican-striped-html5up
-Responsive-Pelican
-alchemy
-'''
+PLUGIN_PATHS = ["pelican-plugins"]
+PLUGINS = ["tag_cloud"]
+
+
+THEME='themes/pelican-fresh'
+# Theme specific configuration
+
+GOOGLE_CUSTOM_SEARCH = 'your search engine unique ID'
+
+HIDE_CATEGORIES_FROM_MENU = False
+
+# SHARETHIS_PUB_KEY = 'your ShareThis Pub Key'
+
