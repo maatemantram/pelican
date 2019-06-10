@@ -45,18 +45,8 @@
                         <ul class="nav">
                         </ul>
 
-<script>
-  (function() {
-    var cx = '012187664387569444530:auoscqbxcgw';
-    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<div id="google-custom-search" class="nav">
-    <gcse:search></gcse:search>
-</div>
+                        <form class="navbar-search" action="https://maatemantram.com/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form>
+
                     </div>
                 </nav>
             </header><!-- /#banner -->
@@ -184,5 +174,11 @@ ami tumii tElakunTe ninu lEva deesku pOtaa... are you ready...!  </p>
     </script>
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script>
+        function validateForm(query)
+        {
+            return (query.length > 0);
+        }
+    </script>
 </body>
 </html>
