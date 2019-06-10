@@ -34,3 +34,9 @@
 14. Separate authors
 
 15. git hooks - post-commit:  `pelican content -o output -s pelicanconf.py && ghp-import output && git push origin ˓→gh-pages`
+
+16. Trailing '\' in the urls
+
+17. Steps to include tipue_search
+
+18. create a new theme & add it as submodule 

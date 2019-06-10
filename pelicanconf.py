@@ -79,14 +79,32 @@ CATEGORY_SAVE_AS = 'category/{slug}.html'
 
 
 
-THEME='themes/pelican-fresh'
+THEME='themes/suchen'
 # Theme specific configuration
 
-PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ["tag_cloud"]
+# A typical Pelican website will utilize many different plugins to extend its capabilities. Each plugin must be setup individually within pelicanconf.py. 
+# The PLUGINS variable contains all plugins being used by the website. 
 
+PLUGIN_PATHS = ["pelican-plugins/",]
+PLUGINS = ['tag_cloud', 'i18n_subsites', 'tipue_search', 'sitemap' ]
 
-GOOGLE_CUSTOM_SEARCH = '012187664387569444530:auoscqbxcgw'
+# LOAD_CONTENT_CACHE = False
+
+SITEMAP = {
+    "format": "xml",
+    "priorities": {
+        "articles": 0.7,
+        "indexes": 0.5,
+        "pages": 0.3,
+    },
+    "changefreqs": {
+        "articles": "monthly",
+        "indexes": "daily",
+        "pages": "monthly",
+    }
+}
+DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))   # for tipue_search plugin
+# GOOGLE_CUSTOM_SEARCH = '012187664387569444530:auoscqbxcgw'
 
 HIDE_CATEGORIES_FROM_MENU = True
 
