@@ -32,3 +32,5 @@
 13. Viewers comments, requests - staticman vs Disqus
 
 14. Separate authors
+
+15. git hooks - post-commit:  `pelican content -o output -s pelicanconf.py && ghp-import output && git push origin ˓→gh-pages`

@@ -56,6 +56,28 @@ USE_FOLDER_AS_CATEGORY = True
 ARTICLE_URL = '{category}/{slug}'
 ARTICLE_SAVE_AS = ARTICLE_URL+'.html'
 
+# # For pages, categories, and tags. 
+# # PAGE_URL = 'pages/{slug}/'
+# # PAGE_SAVE_AS = 'pages/{slug}/index.html'
+# PAGE_URL = '{slug}'
+# PAGE_SAVE_AS = PAGE_URL+'.html'
+
+# CATEGORY_URL = 'category/{slug}'
+# CATEGORY_SAVE_AS = 'category/{slug}/index.html'
+CATEGORY_URL = 'category/{slug}'
+CATEGORY_SAVE_AS = 'category/{slug}.html'
+
+# CATEGORIES_SAVE_AS = 'categories.html'
+
+# # TAG_URL = 'tag/{slug}'
+# # TAG_SAVE_AS = 'tag/{slug}/index.html'
+# TAG_URL = 'tags/{slug}'
+# TAG_SAVE_AS = TAG_URL+'.html'
+# TAGS_SAVE_AS = 'tags.html'
+
+# LOAD_CONTENT_CACHE = False
+
+
 
 THEME='themes/pelican-fresh'
 # Theme specific configuration
@@ -64,7 +86,7 @@ PLUGIN_PATHS = ["pelican-plugins"]
 PLUGINS = ["tag_cloud"]
 
 
-# GOOGLE_CUSTOM_SEARCH = 'your search engine unique ID'
+GOOGLE_CUSTOM_SEARCH = '012187664387569444530:auoscqbxcgw'
 
 HIDE_CATEGORIES_FROM_MENU = True
 
